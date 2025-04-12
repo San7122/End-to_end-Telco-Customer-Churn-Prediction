@@ -1,91 +1,84 @@
-# Telco Customer Churn Prediction and Analysis Project
+# 📊 End-to-End Telco Customer Churn Prediction & Analysis | Machine Learning Project
 
 ![Cover Image](cover%20image.png)
 
 ---
 
-## Project Overview
+## 🧠 Project Overview
 
-This project aims to predict customer churn for a telecom company using machine learning techniques. The objective is to identify customers who are likely to leave the company and provide business insights for retention.
-
----
-
-## Problem Statement
-
-Customer churn causes a significant loss to businesses. Early prediction of churn customers helps in taking preventive actions and improving customer satisfaction.
+This project aims to predict customer churn for a telecom company using machine learning models. It demonstrates the complete ML pipeline — from Data Cleaning, Exploratory Data Analysis (EDA), Feature Engineering, Model Building, Evaluation, to Business Recommendation.
 
 ---
 
-## Dataset Details
+## 📁 Dataset Summary
 
-- Dataset: Telco Customer Dataset  
-- Records: 7043 Rows  
-- Features: 21 Columns  
-- Target Variable: Churn (Yes/No)
+Source: Telco Customer Dataset (Kaggle)  
+Records: 7043 Rows  
+Features: 21 Columns  
+Target Variable: Churn (Yes/No)
+
+Features include:  
+Customer Demographics | Contract Type | Internet Service | Payment Method | Monthly Charges | Total Charges | Churn Status  
 
 ---
 
-## Tools & Technologies Used
+## 🛠 Tools & Libraries Used
 
 - Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
+- Pandas, NumPy — Data Manipulation  
+- Matplotlib, Seaborn — Data Visualization  
+- Scikit-learn — Machine Learning Models  
+- VIF — Multicollinearity Check  
+- GridSearchCV — Hyperparameter Tuning  
 
 ---
 
-## End-to-End Workflow Followed
+## 🔄 Workflow Summary
 
-1. Data Cleaning & Preprocessing  
-2. Exploratory Data Analysis (EDA)  
-3. Feature Engineering  
-4. Outlier & Multicollinearity Check (VIF)  
-5. Model Building  
-6. Cross Validation (CV)  
-7. Hyperparameter Tuning  
-8. Model Evaluation  
-9. Business Insights & Recommendations  
+### 1. Data Preprocessing
+- Checked for missing values — No missing data found.  
+- Removed `TotalCharges` column due to high multicollinearity (VIF > 10).  
+- Label Encoding for categorical features.  
+- Feature Scaling applied to numerical features.  
+- Train-Test Split (80:20).  
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
 ### Churn Distribution
-Shows how many customers churned vs stayed.
+Shows class imbalance.
 
 ![Churn Distribution](Churn%20distribution.png)
 
 ---
 
 ### Churn by Gender
+
 ![Churn by Gender](Churn%20by%20Gender.png)
 
 ---
 
 ### Churn by Contract Type
-Month-to-Month customers churn the most.
+Month-to-Month customers churn more.
 
 ![Churn by Contract Type](Churn%20by%20Contract%20Type.png)
 
 ---
 
 ### Monthly Charges vs Churn (Boxplot)
-Higher charges → Higher churn probability.
 
 ![Monthly Charges vs Churn](Monthly%20Charges%20vs%20Churn%20(Boxplot).png)
 
 ---
 
 ### Correlation Heatmap
-Feature relation analysis.
 
 ![Correlation Heatmap](Correlation%20Heatmap.png)
 
 ---
 
-## Machine Learning Models Applied
+## 🤖 Machine Learning Models Applied
 
 - Logistic Regression  
 - Decision Tree  
@@ -93,17 +86,15 @@ Feature relation analysis.
 - Support Vector Machine (SVM)  
 - K-Nearest Neighbors (KNN)
 
+Used Cross Validation and Hyperparameter Tuning for all models.
+
 ---
 
-## Final Model Accuracy Comparison
+## 📈 Final Model Accuracy Comparison
 
-Comparison of accuracy before and after Cross Validation & Hyperparameter Tuning.
+Comparison of Accuracy Before and After CV & Tuning.
 
 ![Model Accuracy Comparison](model%20accuracy%20.png)
-
----
-
-## Final Results
 
 | Model                | Accuracy After CV & Tuning |
 |---------------------|----------------------------|
@@ -115,22 +106,28 @@ Comparison of accuracy before and after Cross Validation & Hyperparameter Tuning
 
 ---
 
-## Business Insights & Recommendations
+## 📌 Business Insights & Recommendations
 
-- Focus on retaining new customers (low tenure).  
-- Convert Month-to-Month customers to long-term contracts.  
-- Improve service for Fiber Optic Internet users.  
-- Offer better deals to customers using Electronic Check.
-
----
-
-## Conclusion
-
-This project helped me implement the complete machine learning project pipeline and solve a real-world business problem using data science techniques.
+- Customers with low tenure churn more — Improve retention strategy.  
+- Month-to-Month contract customers churn more — Offer long-term plans & benefits.  
+- Fiber Optic Internet users churn more — Improve service quality.  
+- Customers paying via Electronic Check churn more — Promote alternative payment methods.  
 
 ---
 
-## Author
+## 🎯 Key Learnings
 
-- Sanjana Thakur  
-- Aspiring Data Analyst | Data Science Enthusiast  
+- Built a complete end-to-end ML project pipeline.  
+- Learned the importance of feature engineering and multicollinearity handling.  
+- Cross Validation & Hyperparameter Tuning improved model stability.  
+- Generated business-driven insights for customer retention strategies.  
+
+---
+
+## 👩‍💻 Author
+
+Sanjana Thakur  
+Aspiring Data Analyst | Data Science Enthusiast  
+
+ 
+ 
