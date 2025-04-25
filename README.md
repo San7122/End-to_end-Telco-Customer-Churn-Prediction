@@ -1,7 +1,8 @@
 # 📊 End-to-End Telco Customer Churn Prediction & Analysis | Machine Learning Project
 
-![Coverr (cover%20image.png)
-
+<p align="center">
+  <img src="coverrr.png" alt="Cover Image" width="80%">
+</p>
 
 ---
 
@@ -127,8 +128,9 @@ Comparison of Accuracy Before and After CV & Tuning.
 
 ## 👩‍💻 Author
 
-Sanjana Thakur  
-Aspiring Data Analyst | Data Science Enthusiast  
+**Sanjana Thakur**  
+Aspiring Data Analyst | Data Science Enthusiast
+
 
  
  
