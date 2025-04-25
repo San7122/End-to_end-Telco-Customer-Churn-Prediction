@@ -1,6 +1,7 @@
 # 📊 End-to-End Telco Customer Churn Prediction & Analysis | Machine Learning Project
 
-![Cover Image](cover%20image.png)
+![Coverr (cover%20image.png)
+
 
 ---
 
